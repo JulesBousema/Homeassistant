@@ -1,0 +1,39 @@
+MQTT mosquitto
+
+{
+  "plain": true,
+  "ssl": false,
+  "anonymous": true,
+  "logins": [
+    {
+      "username": "yourusername",
+      "password": "yourpassword"
+    }
+  ],
+  "customize": {
+    "active": false,
+    "folder": "mosquitto"
+  },
+  "certfile": "fullchain.pem",
+  "keyfile": "privkey.pem"
+}
+
+
+
+mqtt:
+  broker: core-mosquitto
+  username: yourusername
+  password: yourpassword
+  
+
+Lets encrypt
+  { 
+  "lets_encrypt": {
+    "accept_terms": true,
+    "certfile": "fullchain.pem",
+    "keyfile": "privkey.pem"
+  },
+  "token": "sdfj-2131023-dslfjsd-12321",
+  "domains": ["woonboot.duckdns.org"],
+  "seconds": 300
+}
